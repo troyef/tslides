@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* 
+tgrid - grid layout
+18 cols by 50px, with a 5px gutter
+*/
+
+/* #Base grid 
+================================================== */
+/* Note: Design for a width of 1080px */
+.row {width: 1080px; margin: 0 auto;	overflow: hidden;}
+.row .row {	margin: 0 -5px;	width: auto; display: inline-block;}
+.col {	margin-left:5px; margin-right:5px;
+	display: inline; overflow: hidden; float: left; position: relative;}
+
+.row .col.one	 {	width:50px;	 }
+.row .col.two 	 {	width:110px; }
+.row .col.three  {	width:170px; }
+.row .col.four 	 {	width:230px; }
+.row .col.five	 {	width:290px; }
+.row .col.six	 {	width:350px; }
+.row .col.seven	 {	width:410px; }
+.row .col.eight	 {	width:470px; }
+.row .col.nine 	 {	width:530px; }
+.row .col.ten	 {	width:590px; }
+.row .col.eleven	 {	width:650px; }
+.row .col.twelve	 {	width:710px; }
+.row .col.thirteen	 {	width:770px; }
+.row .col.fourteen	 {	width:830px; }
+.row .col.fifteen	 {	width:890px; }
+.row .col.sixteen	 {	width:950px; }
+.row .col.seventeen	 {	width:1010px; }
+.row .col.eighteen	 {	width:1070px; }
+
+.row .col.quarter	 {	width:260px; }
+.row .col.threequarter	 {	width:800px; }
+
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 756px */
+@media only screen and (min-width: 756px) and (max-width: 959px) {
+
+	.row {width: 756px;}
+	
+	.row .col.one	 {	width:32px;	 }
+	.row .col.two 	 {	width:74px; }
+	.row .col.three  {	width:116px; }
+	.row .col.four 	 {	width:158px; }
+	.row .col.five	 {	width:200px; }
+	.row .col.six	 {	width:242px; }
+	.row .col.seven	 {	width:284px; }
+	.row .col.eight	 {	width:326px; }
+	.row .col.nine 	 {	width:368px; }
+	.row .col.ten	 {	width:410px; }
+	.row .col.eleven	 {	width:452px; }
+	.row .col.twelve	 {	width:494px; }
+	.row .col.thirteen	 {	width:536px; }
+	.row .col.fourteen	 {	width:578px; }
+	.row .col.fifteen	 {	width:620px; }
+	.row .col.sixteen	 {	width:662px; }
+	.row .col.seventeen	 {	width:704px; }
+	.row .col.eighteen	 {	width:746px; }
+
+	.row .col.quarter	 {	width:179px; }
+	.row .col.threequarter	 {	width:557px; }
+
+}
+
+
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 755px) {
+
+	.row {width: 300px;}
+	.row .row {	margin: 0;}
+	.col { margin:0px;}
+
+	.row .col.one,
+	.row .col.two,
+	.row .col.three,
+	.row .col.four,
+	.row .col.five,
+	.row .col.six,
+	.row .col.seven,
+	.row .col.eight,
+	.row .col.nine,
+	.row .col.ten,
+	.row .col.eleven,
+	.row .col.twelve,
+	.row .col.thirteen,
+	.row .col.fourteen,
+	.row .col.fifteen,
+	.row .col.sixteen,
+	.row .col.seventeen,
+	.row .col.eighteen,
+	.row .col.quarter,
+	.row .col.threequarter	 {	width:300px; }
+
+
+}
+
+
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 755px) {
+        .row {width: 420px;}
+		.row .row {	margin: 0;}
+		.col { margin:0px;}
+
+		.row .col.one,
+		.row .col.two,
+		.row .col.three,
+		.row .col.four,
+		.row .col.five,
+		.row .col.six,
+		.row .col.seven,
+		.row .col.eight,
+		.row .col.nine,
+		.row .col.ten,
+		.row .col.eleven,
+		.row .col.twelve,
+		.row .col.thirteen,
+		.row .col.fourteen,
+		.row .col.fifteen,
+		.row .col.sixteen,
+		.row .col.seventeen,
+		.row .col.eighteen,
+		.row .col.quarter,
+		.row .col.threequarter	 {	width:420px; }
+		
+}
